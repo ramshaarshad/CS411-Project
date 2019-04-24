@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const userToScoreSchema = mongoose.Schema({
     user: {type: mongoose.Schema.Types.ObjectId, ref: "UserModel"},
-    vote: {type: Number, min: -1, max: 1}
+    vote: {type: Number, min: -5, max: 50}
 });
 
 const songSchema = mongoose.Schema({
