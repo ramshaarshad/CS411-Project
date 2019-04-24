@@ -1,0 +1,18 @@
+<main-nav></main-nav>
+
+<div class="container-fluid">
+    <input type="text"
+           ng-model="song.name"
+           placeholder="Song Name"
+           class="form-control">
+
+    <button class="btn btn-block btn-success"
+            ng-click="model.searchSong(song.name)">Search Songs</button>
+</div>
+
+<div class="song-mini-group search">
+    <div ng-repeat="song in model.songs" ng-click="model.goToDetails(song.trackId)" class="song-mini">
+        <ng-include src="'/views/song/templates/song-search-mini.view.client.html'"></ng-include>
+    </div>
+</div>
+
