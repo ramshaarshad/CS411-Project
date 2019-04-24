@@ -1,0 +1,11 @@
+<main-nav></main-nav>
+
+<div class="container-fluid">
+    <label for="first">First Name</label>
+    <input id="first" ng-model="model.user.firstName" class="form-control">
+    <label for="last">Last Name</label>
+    <input id="last" ng-model="model.user.lastName" class="form-control">
+    <label for="username">Username</label>
+    <input id="username" ng-model="model.user.username" class="form-control" readonly>
+    <button ng-click="model.updateUser()" class="btn btn-block btn-primary">Save Changes</button>
+</div>
