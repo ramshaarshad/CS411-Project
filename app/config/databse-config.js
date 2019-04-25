@@ -6,7 +6,7 @@ if(process.env.MONGO_USER){ // check if running remotely
     const username = process.env.MONGO_USER; // get from environment
     const password = process.env.MONGO_PASS;
     connectionString = 'mongodb://' + username + ':' + password;
-    connectionString += '@ds149373.mlab.com:49373/heroku_hkpbxhm1'; // user yours
+    connectionString += 'ds147436.mlab.com:47436/heroku_1bqg625p'; // user yours
 }
 
 const db = mongoose.connect(connectionString);
